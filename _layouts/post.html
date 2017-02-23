@@ -9,9 +9,17 @@ layout: default
     {{ content }}
   </div>
 
-  <div class="date" style="font-size: 13px; color: #ccc">
+  <div class="date">
     <center>Szoboszlai Soma | {{ page.date | date: "%B %e, %Y" }}</center>
   </div>
+  
+  <style>
+    date {
+      font-size: 13px;
+      color: #ccc;
+      margin-top: 30px;
+    }
+  </style>
 
   {% include disqus.html %}
 </article>
